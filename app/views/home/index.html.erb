@@ -8,32 +8,35 @@ var markerData = [ // マーカーを立てる場所名・緯度・経度
        name: 'らぁ麺　紫陽花',
        lat: 35.126811,
         lng: 136.87956,
-        adress: '愛知県名古屋市中川区八剱町4-20-1 コーポ源 1F'
+        url: "/home/1"
  }, {
         name: 'ラーメン専門店　徳川町　如水',
-     lat: 35.183039,
+        lat: 35.183039,
         lng: 136.928396,
-        adress: '愛知県名古屋市中川区八剱町4-20-1 コーポ源 1F'
+        url: "/home/2"
  }, {
         name: '麺家獅子丸',
      lat: 35.175265,
       lng: 136.879054,
-      adress: '愛知県名古屋市中川区八剱町4-20-1 コーポ源 1F'
+      url: "/home/3"
  }, {
         name: 'らぁ麺や 汐そば雫',
         lat: 35.122784,
         lng: 136.925668,
-        adress: '愛知県名古屋市中川区八剱町4-20-1 コーポ源 1F'
+        url: "/home/4"
+       
  }, {
         name: 'らぁ麺 飛鶏',
-     lat: 35.221588,
-     lng: 136.94369 ,
-     adress: '愛知県名古屋市中川区八剱町4-20-1 コーポ源 1F'
+        lat: 35.221588,
+        lng: 136.94369 ,
+        url: "/home/5"
+     
  }, {
         name: 'からみそラーメン ふくろう 本店',
-       lat: 35.206393,
-     lng: 136.923628 ,
-     adress: '愛知県名古屋市中川区八剱町4-20-1 コーポ源 1F'
+        lat: 35.206393,
+        lng: 136.923628 ,
+         url: "/home/6"
+     
  }
 ];
  
@@ -56,8 +59,7 @@ function initMap() {
 
  
      infoWindow[i] = new google.maps.InfoWindow({ // 吹き出しの追加
-         content:  markerData[i].name,
-                   markerData[i].adress
+         content:   `<a href="${markerData[i].url}" target="_blank" style="display:inline-block;">${markerData[i].name}</a>`
                  
 
            // 吹き出しに表示する内容

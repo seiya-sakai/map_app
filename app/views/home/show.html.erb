@@ -1,0 +1,16 @@
+<div class="container">
+   <% @shop.each do |shop| %>
+      <div class="posts-index-item">
+         <%=shop.shop_image %>
+      </div>
+      <div class="posts-index-item">
+         <%=shop.name %>
+      </div>
+      <div class="posts-index-item">
+         <%=shop.adress %>
+      </div>
+      <div class="posts-index-item">
+         <%=shop.phone_number %>
+      </div>
+    <% end %>  
+</div>
