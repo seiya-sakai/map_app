@@ -1,7 +1,7 @@
 <div class="container">
    <% @shop.each do |shop| %>
       <div class="posts-index-item">
-         <%=shop.shop_image %>
+         <%= image_tag "/#{shop.shop_image}" %>
       </div>
       <div class="posts-index-item">
          <%=shop.name %>
