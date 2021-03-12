@@ -5,5 +5,15 @@ class HomeController < ApplicationController
   end  
   def show
     @shop = Shop.where(id: params[:id])
+    @posts = Post.all
+    @post = Post.new
+  end  
+  def create
+    Post.create(post_params)
+    @posts = Post.all
+  end  
+  private 
+  def post_params
+    params.require(:post).permit(:name,:body)
   end  
 end
