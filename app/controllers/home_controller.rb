@@ -11,6 +11,9 @@ class HomeController < ApplicationController
   def create
     Post.create(post_params)
     @posts = Post.all
+    respond_to do |format|
+      format.js
+    end
   end  
   private 
   def post_params
