@@ -3,29 +3,26 @@
       <div class="posts-index-image">
          <%= image_tag "/#{shop.shop_image}" %>
       </div>
-      <div class="posts-index-item">
+      <div class="home-index-item">
          <p>店名</p>
          <%=shop.name %>
       </div>
-      <div class="posts-index-item">
+      <div class="home-index-item">
       　  <p>住所</p>
          <%=shop.adress %>
       </div>
-      <div class="posts-index-item">
+      <div class="home-index-item">
          <p>電話番号</p>
          <%=shop.phone_number %>
       </div>
     <% end %>  
 </div>
 <div class="modal_container">
-  <div class="row">
-     <div class="col-3">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
           新規投稿
         </button>
-     </div>
-    <div class="col-9 posts">
+    <div class="posts">
       <%= render 'posts', posts:@posts %>
     </div>
   </div>

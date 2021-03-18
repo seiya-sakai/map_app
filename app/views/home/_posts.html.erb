@@ -1,12 +1,11 @@
-<% posts.each do |post| %>
-  <div class="card">
-   <p class="card-text">
-       <%=post.name %>
-   </p>
-   <p class="card-text">
-     <small>
-       <%= simple_format post.body %>
-     </small>
-   </p>
+ 
+<div class="main posts-index">
+  <div class="containerーpost">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+       <p> <%=post.name %></p>
+       <p><%= simple_format post.body %></p>
+      </div>
+    <% end %>
   </div>
-<% end %>  
+</div>

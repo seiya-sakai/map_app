@@ -198,7 +198,7 @@ a.btn-custom01:active:after {
   
   
 } 
-.posts-index-item {
+.home-index-item {
   width: 50%;
   padding: 0.2em 0em;
   margin: 1em 0;
@@ -209,15 +209,18 @@ a.btn-custom01:active:after {
   border: solid 3px #6091d3;/*線*/
   border-radius: 10px;/*角の丸み*/
 }
-.col-3{
-  margin-top: 40px;
-  margin-left: 30px;
+.posts-index-item {
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
 }
-.card {
+.main {
+  top: 64px;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #f5f8fa;
   text-align: center;
-  margin-left: 100px ;
   font-size: 30px;
-}
-.btn  {
-  margin-bottom: 40px;
 }
